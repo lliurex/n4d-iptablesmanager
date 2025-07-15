@@ -1,0 +1,15 @@
+Source: n4d-iptablesmanager
+Section: misc
+Priority: standard
+Maintainer: LliureX Team <lliurex@gva.es>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: http://lliurex.net
+Vcs-Git: https://github.com/lliurex/n4d-iptablesmanager.git
+
+Package: n4d-iptablesmanager
+Architecture: all
+Conflicts: n4d-server-plugins (<< 0.230)
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3, n4d, iptables
+Description: n4d iptables manager
+ This package contains n4d plugin to manage certain iptables actions 
