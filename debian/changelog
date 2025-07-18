@@ -1,3 +1,9 @@
+n4d-iptablesmanager (0.1.5) jammy; urgency=medium
+
+  * added epoptes ports 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 18 Jul 2025 13:41:47 +0200
+
 n4d-iptablesmanager (0.1) jammy; urgency=medium
 
   * Initial release.
