@@ -11,7 +11,7 @@ class IptablesManager:
 		
 		self.iptables_tc_skel="iptables -%s OUTPUT -o %s -m owner --uid-owner %s -m comment --comment N4D_IPTABLES_TC -j DROP"
 		self.iptables_fc_skel="iptables -%s FORWARD -s %s  -p tcp ! -d 10.0.0.0/8 -m comment --comment N4D_IPTABLES_FC -j DROP"
-		self.iptables_nf_skel1="iptables -%s OUTPUT -p tcp -m multiport --dports 88,389,9779 -m owner --uid-owner %s -m comment --comment N4D_IPTABLES_NF -j ACCEPT"
+		self.iptables_nf_skel1="iptables -%s OUTPUT -p tcp -m multiport --dports 88,389,789,9779,10000 -m owner --uid-owner %s -m comment --comment N4D_IPTABLES_NF -j ACCEPT"
 		self.iptables_nf_skel2="iptables -%s OUTPUT -m owner --uid-owner %s -m comment --comment N4D_IPTABLES_NF --j REJECT"
 		
 		
